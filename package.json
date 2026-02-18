@@ -25,6 +25,9 @@
     "url": "https://github.com/kerosan/cx/issues"
   },
   "homepage": "https://github.com/kerosan/cx#readme",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "typescript": "^5.9.3"
   }
