@@ -2,20 +2,20 @@ type ClassValue = string | boolean | null | undefined;
 type ClassArgument = ClassValue | ClassValue[] | Record<string, any>;
 
 const onArgument = (item: ClassArgument): string[] => {
-  if(!item) return [];
+  if (!item) return [];
 
-  if(typeof item === "string" && item !== "") {
+  if (typeof item === "string" && item !== "") {
     return [item];
   }
 
-  if(Array.isArray(item)) {
+  if (Array.isArray(item)) {
     return item
       .map(onArgument)
       .flat()
       .filter(Boolean);
   }
 
-  if(typeof item === "object") {
+  if (typeof item === "object") {
     return Object.entries(item)
       .filter(([, value]) => Boolean(value))
       .map(([key]) => key)

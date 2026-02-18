@@ -1,0 +1,31 @@
+{
+  "name": "@kerosan/cx",
+  "version": "1.0.0",
+  "description": "Conditional classNames",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kerosan/cx.git"
+  },
+  "keywords": [
+    "className",
+    "clsx",
+    "cn",
+    "cx"
+  ],
+  "author": "mr.kerosan@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kerosan/cx/issues"
+  },
+  "homepage": "https://github.com/kerosan/cx#readme",
+  "dependencies": {
+    "typescript": "^5.9.3"
+  }
+}
